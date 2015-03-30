@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Polygon</title>
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .polygon {
+            width: 960px;
+            height: 100%;
+            margin: auto;
+            position: relative;
+        }
+
+        .polygon div {
+            width: 300px;
+            height: 300px;
+            margin: 8px;
+            display: inline-block;
+        }
+
+        .triangle {
+            border-width: 0 150px 261px;
+            border-color: transparent transparent Cyan;
+            border-style: solid;
+        }
+
+        .quadrilateral {
+            background-color: GreenYellow;
+        }
+
+        .pentagon {
+            width: 0;
+            height: 0;
+            border-width: 0 149px 109px;
+            border-color: transparent transparent SlateBlue;
+            border-style: solid;
+            position: relative;
+            top: -175px;
+        }
+
+        .pentagon:before {
+            content: "";
+            width: 186px;
+            height: 0;
+            position: absolute;
+            top: 300px;
+            left: -149px;
+            border-width: 175px 57px 0;
+            border-color: SlateBlue transparent transparent;
+            border-style: solid;
+        }
+
+        .hexagon {
+            width: 0;
+            height: 0;
+            border-width: 0 75px 130px;
+            border-color: transparent transparent Orchid;
+            border-style: solid;
+            position: relative;
+            top: -150px;
+        }
+
+        .hexagon:before {
+            content: "";
+            width: 150px;
+            height: 0;
+            position: absolute;
+            top: 300px;
+            left: -75px;
+            border-width: 130px 75px 0;
+            border-color: Orchid transparent transparent;
+            border-style: solid;
+        }
+
+        .heptagon {
+            background-color: RosyBrown;
+        }
+
+        .octagon {
+            background-color: Gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="polygon">
+        <div class="triangle"></div>
+        <div class="quadrilateral"></div>
+        <div class="pentagon"></div>
+        <div class="hexagon"></div>
+        <div class="heptagon"></div>
+        <div class="octagon"></div>
+    </div>
+</body>
+</html>

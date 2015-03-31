@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Polygon</title>
     <style>
-        * {
+        *, *:before, *:after {
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
         }
@@ -31,6 +31,9 @@
 
         .quadrilateral {
             background-color: GreenYellow;
+            border-width: 40px 20px 0;
+            border-color: white;
+            border-style: solid;
         }
 
         .pentagon {
@@ -45,7 +48,7 @@
 
         .pentagon:before {
             content: "";
-            width: 186px;
+            width: 299px;
             height: 0;
             position: absolute;
             top: 300px;
@@ -67,7 +70,7 @@
 
         .hexagon:before {
             content: "";
-            width: 150px;
+            width: 300px;
             height: 0;
             position: absolute;
             top: 300px;
@@ -78,11 +81,69 @@
         }
 
         .heptagon {
-            background-color: RosyBrown;
+            width: 0px;
+            height: 0px;
+            border-width: 0 83px 104px;
+            border-color: transparent transparent RosyBrown;
+            border-style: solid;
+            position: relative;
+            top: -187px;
+        }
+
+        .heptagon:before {
+            content: "";
+            width: 300px;
+            height: 130px;
+            border-width: 130px 29px 0;
+            border-color: RosyBrown transparent transparent;
+            border-style: solid;
+            position: absolute;
+            top: 300px;
+            left: -83px;
+        }
+
+        .heptagon:after {
+            content: "";
+            width: 241px;
+            height: 57px;
+            border-width: 57px 120px 0;
+            border-color: RosyBrown transparent transparent;
+            border-style: solid;
+            position: absolute;
+            top: 430px;
+            left: -53px;
         }
 
         .octagon {
+            width: 0;
+            height: 0;
+            border-width: 0 88px 88px;
+            border-color: transparent transparent Gold;
+            border-style: solid;
+            position: relative;
+            top: -212px;
+        }
+
+        .octagon:before {
+            content: "";
+            width: 300px;
+            height: 124px;
             background-color: Gold;
+            position: absolute;
+            top: 300px;
+            left: -88px;
+        }
+
+        .octagon:after {
+            content: "";
+            width: 300px;
+            height: 88px;
+            border-width: 88px 88px 0;
+            border-color: Gold transparent transparent;
+            border-style: solid;
+            position: absolute;
+            top: 424px;
+            left: -88px;
         }
     </style>
 </head>
